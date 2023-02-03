@@ -1,7 +1,8 @@
-.blur {
-  background-color: #00000050;
-  border-radius: 10px;
-  backdrop-filter: blur(10px);
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 .body {
   background-color: #041250;
@@ -28,104 +29,31 @@
   color: white;
   transition: all 0.5s ease;
 }
-#site-header.hide {
-  top: -450px;
-}
-.header__logo:hover,
-.header__logo:focus {
-  opacity: 0.65;
-}
-
-.navbar .nav-link {
-  color: #ced3fc;
-}
-
-.section__1__article {
-  color: #ced3fc;
-}
-
-.section__1__h1 {
-  color: #ffffff;
-  font-size: 3.1rem;
-}
-
 .section__1__h1--views {
   color: #ffffff;
 }
 
-.section__1__h4--views {
-  color: #ffffff;
-}
 .section__1__p {
   color: #ced3fc;
 }
 
-.section__1__img {
-  padding: 1rem;
+.section__1__h2 {
+  color: white;
+}
+
+.section__1__h3 {
+  color: white;
+}
+
+.section__1__calculadora {
+  padding: 0;
+}
+
+.section__1__calculadora__img {
   transition: transform 0.3s;
 }
-.section__1__img:hover,
-.section__1__img :focus {
-  opacity: 0.65;
-  transform: scale(1.03);
-}
-
-/* section__2 */
-
-.section__2 {
-  /*   background: linear-gradient(#030830, #041250); */
-  background-color: rgba(0, 24, 90, 0.5);
-  backdrop-filter: blur(10px);
-}
-
-.section__2__h2 {
-  color: white;
-}
-.section__2__h3 {
-  color: white;
-}
-
-.section__2__img {
-  padding: 0;
-}
-
-.section__2__p {
-  color: #ced3fc;
-}
-
-/* section__3 */
-
-.section__3 {
-  /*   background-color: #03083090; */
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  text-align: center;
-}
-.section__3__p {
-  color: #ced3fc;
-}
-
-.section__3__h2 {
-  color: white;
-}
-
-.section__3__h3 {
-  color: white;
-}
-
-.section__3__article {
-  padding: 0;
-}
-
-.section__3__aside {
-  padding: 0;
-}
-
-.section__3__aside__img {
-  transition: transform 0.3s;
-}
-.section__3__aside__img:hover,
-.section__3__aside__img:focus {
+.section__1__calculadora__img:hover,
+.section__1__calculadora__img:focus {
   opacity: 0.65;
   transform: scale(1.03);
 }
@@ -182,84 +110,21 @@
   color: #ced3fc;
 }
 
-
-/* Lines of the Toggler */
-.toggler-icon {
-  width: 30px;
-  height: 3px;
-  background-color: #8790d8;
-  display: block;
-  transition: all 0.2s;
-}
-
-/* Adds Space between the lines */
-.middle-bar {
-  margin: 5px auto;
-}
-
-/* State when navbar is opened (START) */
-.navbar-toggler .top-bar {
-  transform: rotate(45deg);
-  transform-origin: 10% 10%;
-}
-
-.navbar-toggler .middle-bar {
-  opacity: 0;
-  filter: alpha(opacity=0);
-}
-
-.navbar-toggler .bottom-bar {
-  transform: rotate(-45deg);
-  transform-origin: 10% 90%;
-}
-/* State when navbar is opened (END) */
-
-/* State when navbar is collapsed (START) */
-.navbar-toggler.collapsed .top-bar {
-  transform: rotate(0);
-}
-
-.navbar-toggler.collapsed .middle-bar {
-  opacity: 1;
-  filter: alpha(opacity=100);
-}
-
-.navbar-toggler.collapsed .bottom-bar {
-  transform: rotate(0);
-}
-/* State when navbar is collapsed (END) */
-
-/* Color of Toggler when collapsed */
-.navbar-toggler.collapsed .toggler-icon {
-  background-color: #8790d8;
-}
-
-/* * Remove border from toggler */
-
-.navbar-toggler:focus,
-.navbar-toggler:active,
-.navbar-toggler-icon:focus {
-  outline: none !important;
-  box-shadow: none !important;
-  border: 0 !important;
-}
-
 /* button */
 .btn {
   border: 0 !important;
 }
 
-@media (min-width: 768px) {
-  .section__1__img {
-    padding-top: 0;
-  }
+.btn-sm__limpiar {
+  background-color: rgba(255, 79, 198, 0.3) !important;
+}
+.btn-sm__limpiar:hover,
+.btn-sm__limpiar:focus {
+  opacity: 0.8;
 }
 
-@media (min-width: 1200px) {
-  .section__1__h1 {
-    font-size: 5rem;
-  }
-  .section__1 {
-    padding-top: 200px;
-  }
+.blur {
+  background-color: #00000050;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
 }
